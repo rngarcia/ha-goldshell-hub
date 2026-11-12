@@ -1,0 +1,12 @@
+{
+  "domain": "goldshell_hub",
+  "name": "Goldshell Hub",
+  "codeowners": ["@rngarcia"],
+  "config_flow": true,
+  "documentation": "https://github.com/rngarcia/ha-goldshell-hub",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/rngarcia/ha-goldshell-hub/issues",
+  "requirements": ["qrcode[pil]==7.4.2"],
+  "version": "0.1.0"
+}

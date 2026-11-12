@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Conecte sua conta Goldshell",
+        "description": "Abra o app **Goldshell** no celular, toque no botão de escanear (QR) e leia este código:\n\n{qr_code}\n\nSe não conseguir escanear, abra este link no celular que tem o app: {q_link}\n\nAprove o login no app e clique em **Enviar**. O código expira em 5 minutos."
+      },
+      "reauth_confirm": {
+        "title": "Token da Goldshell expirou",
+        "description": "O Goldshell Hub emite tokens de 30 dias e não tem renovação automática, então o login precisa ser refeito. Clique em **Enviar** para escanear um novo QR."
+      },
+      "timeout": {
+        "title": "QR expirou",
+        "description": "O login não foi aprovado a tempo. Clique em **Enviar** para gerar um novo QR."
+      },
+      "login_error": {
+        "title": "Falha no login",
+        "description": "Algo deu errado na comunicação com o Goldshell Hub. Clique em **Enviar** para tentar de novo."
+      }
+    },
+    "progress": {
+      "wait_for_scan": "Aguardando você aprovar o login no app Goldshell…"
+    },
+    "abort": {
+      "cannot_connect": "Não foi possível acessar o Goldshell Hub. Verifique sua conexão e tente novamente.",
+      "already_configured": "Esta conta Goldshell já está configurada.",
+      "wrong_account": "A conta escaneada não corresponde à que está sendo reautenticada.",
+      "reauth_successful": "Reautenticação concluída com sucesso."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": { "name": "Status" },
+      "firmware": { "name": "Firmware" },
+      "power_mode": { "name": "Modo de energia" },
+      "uptime": { "name": "Tempo ligado" },
+      "hashrate": { "name": "Hashrate {coin}" },
+      "hashrate_avg": { "name": "Hashrate médio {coin}" },
+      "temperature": { "name": "Temperatura {coin}" },
+      "fan": { "name": "Ventilador {coin}" },
+      "board_status": { "name": "Status {coin}" }
+    }
+  }
+}

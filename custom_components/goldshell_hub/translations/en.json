@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Link your Goldshell account",
+        "description": "Open the **Goldshell** app on your phone, tap the scan (QR) button and scan this code:\n\n{qr_code}\n\nIf you cannot scan it, open this link on the phone that has the app: {q_link}\n\nApprove the login in the app, then press **Submit**. The code expires after 5 minutes."
+      },
+      "reauth_confirm": {
+        "title": "Goldshell token expired",
+        "description": "The Goldshell Hub issues 30-day tokens and has no refresh, so the login needs renewing. Press **Submit** to scan a new QR code."
+      },
+      "timeout": {
+        "title": "QR code expired",
+        "description": "The login was not approved in time. Press **Submit** to get a fresh QR code."
+      },
+      "login_error": {
+        "title": "Login failed",
+        "description": "Something went wrong talking to the Goldshell Hub. Press **Submit** to try again."
+      }
+    },
+    "progress": {
+      "wait_for_scan": "Waiting for you to approve the login in the Goldshell app…"
+    },
+    "abort": {
+      "cannot_connect": "Could not reach the Goldshell Hub. Check your internet connection and try again.",
+      "already_configured": "This Goldshell account is already set up.",
+      "wrong_account": "The scanned account does not match the one being re-authenticated.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": { "name": "Status" },
+      "firmware": { "name": "Firmware" },
+      "power_mode": { "name": "Power mode" },
+      "uptime": { "name": "Uptime" },
+      "hashrate": { "name": "{coin} hashrate" },
+      "hashrate_avg": { "name": "{coin} average hashrate" },
+      "temperature": { "name": "{coin} temperature" },
+      "fan": { "name": "{coin} fan" },
+      "board_status": { "name": "{coin} status" }
+    }
+  }
+}
