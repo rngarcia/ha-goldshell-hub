@@ -72,11 +72,13 @@ runs the **HACS action** and **hassfest**. To get into the HACS default store:
    (e.g. `home-assistant`, `hacs`, `goldshell`), and keep issues enabled.
 2. Ensure the **Validate** workflow passes (HACS + hassfest, no errors).
 3. Cut a **GitHub release** (a real release, not just a tag).
-4. For icons to render inside Home Assistant (not just HACS), submit the
-   `goldshell_hub` domain to [home-assistant/brands](https://github.com/home-assistant/brands);
-   the `brand/` folder here is the HACS fallback.
-5. Open a PR adding this repo to the `integration` list in
+4. Open a PR adding this repo to the `integration` list in
    [hacs/default](https://github.com/hacs/default).
+
+The icon ships with the integration: Home Assistant 2026.3+ serves the images in
+`custom_components/goldshell_hub/brand/` through its Brands Proxy API, so **no
+`home-assistant/brands` PR is needed** (custom-integration PRs there are no longer
+accepted).
 
 ## Support
 
