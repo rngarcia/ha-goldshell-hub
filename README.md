@@ -1,5 +1,9 @@
 # Goldshell Hub for Home Assistant
 
+[![Validate](https://github.com/rngarcia/ha-goldshell-hub/actions/workflows/validate.yml/badge.svg)](https://github.com/rngarcia/ha-goldshell-hub/actions/workflows/validate.yml)
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![GitHub release](https://img.shields.io/github/v/release/rngarcia/ha-goldshell-hub)](https://github.com/rngarcia/ha-goldshell-hub/releases)
+[![License](https://img.shields.io/github/license/rngarcia/ha-goldshell-hub)](LICENSE)
 [![Buy me a beer](https://img.shields.io/badge/Buy%20me%20a%20beer-PayPal-f5a623?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=rngarcia%40gmail.com&currency_code=USD)
 
 Monitor **Goldshell** miners through the **Goldshell Hub** cloud
