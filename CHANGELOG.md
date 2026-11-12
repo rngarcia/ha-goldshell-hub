@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Per-miner diagnostic sensor: hardware version.
 - Screenshot in the README.
 
+### Changed
+- Uptime is now shown in a readable `12d 20h 9m` form instead of raw seconds.
+
 ## [0.1.0] - 2026-11-12
 
 ### Added

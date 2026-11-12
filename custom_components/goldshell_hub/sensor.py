@@ -17,7 +17,6 @@ from homeassistant.const import (
     REVOLUTIONS_PER_MINUTE,
     EntityCategory,
     UnitOfTemperature,
-    UnitOfTime,
 )
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.device_registry import (
@@ -53,6 +52,24 @@ def _status(value: Any) -> str | None:
         return None
 
 
+def _uptime(value: Any) -> str | None:
+    """Format a duration in seconds as ``12d 20h 9m`` (minutes resolution)."""
+    seconds = _num(value)
+    if seconds is None:
+        return None
+    seconds = int(seconds)
+    days, rem = divmod(seconds, 86400)
+    hours, rem = divmod(rem, 3600)
+    minutes = rem // 60
+    parts: list[str] = []
+    if days:
+        parts.append(f"{days}d")
+    if hours or days:
+        parts.append(f"{hours}h")
+    parts.append(f"{minutes}m")
+    return " ".join(parts)
+
+
 @dataclass(frozen=True, kw_only=True)
 class GoldshellSensorDescription(SensorEntityDescription):
     """Describes a Goldshell sensor and how to read its value."""
@@ -81,10 +98,9 @@ MACHINE_SENSORS: tuple[GoldshellSensorDescription, ...] = (
     GoldshellSensorDescription(
         key="uptime",
         translation_key="uptime",
-        native_unit_of_measurement=UnitOfTime.SECONDS,
-        device_class=SensorDeviceClass.DURATION,
+        icon="mdi:timer-outline",
         entity_category=EntityCategory.DIAGNOSTIC,
-        value_fn=lambda m: _num(m.get("duration")),
+        value_fn=lambda m: _uptime(m.get("duration")),
     ),
     GoldshellSensorDescription(
         key="hardware_version",
