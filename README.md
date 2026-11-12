@@ -19,7 +19,7 @@ Account Key).
 
 ## Screenshots
 
-<img src="docs/sensors.png" alt="Goldshell Byte sensors in Home Assistant" width="320">
+<img src="docs/sensors.png" alt="Goldshell Byte device page in Home Assistant" width="760">
 
 ## Features
 
