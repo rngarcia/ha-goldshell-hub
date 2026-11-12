@@ -1,6 +1,6 @@
 # Goldshell Hub for Home Assistant
 
-[![Buy me a beer](https://img.shields.io/badge/Buy%20me%20a%20beer-%F0%9F%8D%BA-yellow.svg)](https://www.buymeacoffee.com/rngarcia)
+[![Buy me a beer](https://img.shields.io/badge/Buy%20me%20a%20beer-PayPal-f5a623?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=rngarcia%40gmail.com&currency_code=USD)
 
 Monitor **Goldshell** miners through the **Goldshell Hub** cloud
 (`hub.goldshell.com`) instead of the miner's local network. Because the data
@@ -74,11 +74,9 @@ runs the **HACS action** and **hassfest**. To get into the HACS default store:
 5. Open a PR adding this repo to the `integration` list in
    [hacs/default](https://github.com/hacs/default).
 
-## Support 🍺
+## Support
 
-If this integration is useful to you, you can
-[**buy me a beer**](https://www.buymeacoffee.com/rngarcia). Totally optional —
-the integration is and stays free.
+If this integration is useful to you, you can [buy me a beer](https://www.paypal.com/donate/?business=rngarcia%40gmail.com&currency_code=USD) 🍺.
 
 ## Disclaimer
 
