@@ -17,6 +17,10 @@ Account Key).
 > web app uses. Goldshell may change it at any time. Not affiliated with
 > Goldshell.
 
+## Screenshots
+
+<img src="docs/sensors.png" alt="Goldshell Byte sensors in Home Assistant" width="320">
+
 ## Features
 
 - One **device per miner** on your account, discovered automatically.

@@ -86,6 +86,12 @@ MACHINE_SENSORS: tuple[GoldshellSensorDescription, ...] = (
         entity_category=EntityCategory.DIAGNOSTIC,
         value_fn=lambda m: _num(m.get("duration")),
     ),
+    GoldshellSensorDescription(
+        key="hardware_version",
+        translation_key="hardware_version",
+        entity_category=EntityCategory.DIAGNOSTIC,
+        value_fn=lambda m: m.get("hv") or None,
+    ),
 )
 
 BOARD_SENSORS: tuple[GoldshellSensorDescription, ...] = (
@@ -126,6 +132,28 @@ BOARD_SENSORS: tuple[GoldshellSensorDescription, ...] = (
         translation_key="board_status",
         entity_category=EntityCategory.DIAGNOSTIC,
         value_fn=lambda b: _status(b.get("status")),
+    ),
+    GoldshellSensorDescription(
+        key="hardware_error",
+        translation_key="hardware_error",
+        state_class=SensorStateClass.MEASUREMENT,
+        suggested_display_precision=2,
+        entity_category=EntityCategory.DIAGNOSTIC,
+        value_fn=lambda b: _num(b.get("harderr")),
+    ),
+    GoldshellSensorDescription(
+        key="rejected",
+        translation_key="rejected",
+        state_class=SensorStateClass.MEASUREMENT,
+        suggested_display_precision=4,
+        entity_category=EntityCategory.DIAGNOSTIC,
+        value_fn=lambda b: _num(b.get("refuse")),
+    ),
+    GoldshellSensorDescription(
+        key="serial",
+        translation_key="serial",
+        entity_category=EntityCategory.DIAGNOSTIC,
+        value_fn=lambda b: b.get("sn"),
     ),
 )
 

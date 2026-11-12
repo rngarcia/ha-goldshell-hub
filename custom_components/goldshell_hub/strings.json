@@ -38,7 +38,11 @@
       "hashrate_avg": { "name": "{coin} average hashrate" },
       "temperature": { "name": "{coin} temperature" },
       "fan": { "name": "{coin} fan" },
-      "board_status": { "name": "{coin} status" }
+      "board_status": { "name": "{coin} status" },
+      "hardware_version": { "name": "Hardware version" },
+      "hardware_error": { "name": "{coin} hardware errors" },
+      "rejected": { "name": "{coin} rejected shares" },
+      "serial": { "name": "{coin} serial number" }
     }
   }
 }

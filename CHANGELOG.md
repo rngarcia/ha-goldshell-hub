@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-11-12
+
+### Added
+- Per-hashboard diagnostic sensors: hardware errors, rejected shares, and serial
+  number.
+- Per-miner diagnostic sensor: hardware version.
+- Screenshot in the README.
+
 ## [0.1.0] - 2026-11-12
 
 ### Added
@@ -17,4 +25,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Per-miner sensors: status, firmware version, power mode, and uptime.
 - English (default) and Brazilian Portuguese (`pt-BR`) translations.
 
+[0.2.0]: https://github.com/rngarcia/ha-goldshell-hub/releases/tag/v0.2.0
 [0.1.0]: https://github.com/rngarcia/ha-goldshell-hub/releases/tag/v0.1.0
